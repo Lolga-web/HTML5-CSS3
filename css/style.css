@@ -1,0 +1,434 @@
+/*general*/
+html, body {
+    min-height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Arial, Verdana, sans-serif;
+}
+.product_name, .about_product, .pluses_product, 
+.scrinshots, .reviews, .buy_now, .contacts {
+    padding: 50px;
+}
+
+/*header*/
+.product_name {
+    background: #445162;
+}
+.product_name:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.product_name_title {
+    margin-top: 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.product_name_list {
+    list-style: inside url("../image/icons/check_icon.png");
+    padding-left: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 36px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.product_name_image {
+    width: 100%;
+}
+
+/*about_product*/
+.about_product:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.about_product_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+}
+.product_description {
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about_product_video_wrap {
+   text-align: center;
+}
+.about_product_video {
+    width: 100%;
+    height: auto;
+}
+
+/*video_block*/
+.video_block {
+    margin: 0;
+    min-height: 30vh;
+    position: relative;
+}
+.background_video {
+    height: 30vh;
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.video-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30vh;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-content_wrap {
+    width: 80%;
+}
+
+.video_text {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #fff; 
+    margin-bottom: 0;
+    
+}
+.video-button {
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 150px;
+    height: 30px;
+    text-align: center;
+    color: #445161;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    outline: none;
+}
+.video-button:hover {
+    background-color: #ebebeb;
+}
+.video-button:focus {
+    outline: none;
+}
+
+/*pluses_product*/
+.pluses_product {
+    background: #f5f5f5;
+}
+.pluses_product:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.pluses_product_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.pluses_product_list {
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+}
+.pluses_product_list:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.pluses_product_item {
+    background: url("../image/icons/plus_icon.png") no-repeat left 5px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/*scrinshots*/
+.scrinshots:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.scrinshots_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.scrinshot_item {
+    color: #445161;
+}
+.scrinshot_item:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.scrinshot_image {
+    float: left;
+    margin-right: 15px;
+}
+.scrinshot_item_title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.scrinshot_description {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/*reviews*/
+.reviews {
+    background: #f5f5f5;
+}
+.reviews:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.reviews_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.review_item:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.review_image {
+    border-radius: 50%;
+    float: right;
+}
+.review_wrapper:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+.review {
+    position: relative;
+    color: #445161;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+    float: right;
+    background: #ebebeb;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.review::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+    top: 27px;
+    background: #ebebeb;
+    transform: rotate(45deg);
+}
+.review_author {
+    color: #989898;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/*buy-now*/
+.buy_now:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.buy_now_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+.buy_list {
+    display: flex;
+    flex-direction: column;
+}
+.price_item {
+    background: #445161;
+    border-radius: 4px;
+    border: 2px solid #445161;
+}
+.price_title {
+    padding: 17px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+.price {
+    text-align: center;
+    padding: 18px;
+    color: #445161;
+    background: #ffffff;
+    font-size: 40px;
+    line-height: 30px;
+}
+.price_list {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 20px;
+}
+.button-buy {
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    background: #ffffff;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+}
+.button-buy:hover {
+    text-decoration: none;
+    color: #445161;
+    background-color: #ebebeb;
+}
+.button-buy:focus {
+    outline: none;
+}
+
+/*contacts*/
+.contacts {
+   background: #445162; 
+}
+.contacts:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.contacts_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.contacts_wrapper:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.message_name, .message_email, .message-text {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 21px;
+    padding: 7px 5px;
+    box-sizing: border-box;
+    color: #445161;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+}
+.message-text {
+    font-family: inherit;
+    min-height: 170px;
+}
+.message_name:focus, .message_email:focus, .message-text:focus {
+    background-color: #ebebeb;
+}
+.button-send {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    color: #445161;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+}
+.button-send:hover {
+    background-color: #ebebeb;
+}
+.contacts_list > div:not(.social_icons) {
+    margin-bottom: 15px;
+}
+.skype, .icq, .email, .phone {
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.skype {
+    background: url("../image/icons/skype_icon.png") no-repeat left center;
+}
+.icq {
+    background: url("../image/icons/icq_icon.png") no-repeat left center;
+}
+.email {
+    background: url("../image/icons/email_icon.png") no-repeat left center;
+}
+.phone {
+    background: url("../image/icons/phone_icon.png") no-repeat left center;
+}
+.social_icons {
+    font-family: SocialIco, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 44px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.social_media_item:hover {
+    opacity: .8;
+}
+
+/*footer*/
+.footer {
+    height: 26px;
+    text-align: center;
+    color: #445161;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 26px;
+    background: #f5f5f5;
+}
