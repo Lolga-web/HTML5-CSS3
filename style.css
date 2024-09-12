@@ -1,0 +1,363 @@
+/*general*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+.product_name, .about_product, 
+.pluses_product, .scrinshots, 
+.reviews, .buy_now, .contacts {
+    box-sizing: border-box;
+    padding: 50px;
+}
+.small_title {
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*header*/
+.product_name {
+    min-height: 323px;
+    overflow: hidden;
+    background-color: #445162;
+    color: #fff;
+}
+.product_name_text {
+    float: left;
+    width: 650px;
+}
+.product_name_title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.page_steps_list {
+    margin-top: 50px;
+    margin-left: 35px;
+    list-style-type: none;
+    list-style-image: url(icons/check_icon.png);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.product_name_image {
+    width: 469px;
+    height: 214px;
+    background-color: #fff;
+    float: right;   
+}
+
+/*about_product*/
+.about_product {
+    min-height: 345px;
+    overflow: hidden;
+}
+.about_product_text {
+    float: left;
+    width: 650px;
+}
+.product_small_title {
+    text-align: left;
+}
+.product_description {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.about_product_image {
+    float: right;
+    width: 430px;
+    height: 245px;
+    background-color: #445161;
+}
+
+/*pluses_product*/
+.pluses_product {
+    min-height: 415px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+.pluses_product_item {
+    width: 580px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    float: left;
+}
+.pluses_product_item:nth-child(2n) {
+    margin-left: 20px;
+}
+.plus_box {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: #445161;
+    background-image: url(icons/Layer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-right: 10px;
+}
+.plus_text {
+    width: 540px;
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+/*scrinshots*/
+.scrinshots {
+    min-height: 490px;
+    overflow: hidden;
+}
+.scrinshots_wrapper {
+    width: 580px;
+    margin-bottom: 30px;
+    float: left;
+}
+.scrinshots_wrapper:nth-child(2n+1) {
+    margin-left: 15px;
+}
+.scrinshots_image {
+    width: 200px;
+    height: 150px;
+    background-color: #445161;
+    float: left;
+    margin-right: 15px;
+}
+.scrinshots_title {
+    color: #445161;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.scrinshots_description {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/*reviews*/
+.reviews {
+    min-height: 425px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+.review_wrapper {
+    width: 580px;
+    float: left; 
+}
+.review_wrapper:nth-child(2),
+.review_wrapper:nth-child(3) {
+    margin-bottom: 20px;
+}
+.review_background {
+    width: 435px;
+    background-image: url(icons/bg_review.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 15px;
+}
+.review_text { 
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 15px 20px 15px 27px;
+}
+.review_author {
+    color: #989898;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.review_image {
+    width: 75px;
+    height: 75px;
+    background-color: #445161;
+    float: left;
+    border-radius: 50%;
+}
+
+/*buy-now*/
+.buy_now {
+    min-height: 656px;
+    overflow: hidden;
+    margin: 0 95px; 
+    white-space: nowrap;
+}
+.price_list {
+    width: 300px;
+    min-height: 300px;
+    overflow: hidden;
+    background-color: #445162;
+    vertical-align: bottom;
+    display: inline-block;
+    white-space: normal;
+}
+.price_list:nth-child(n+3) {
+    margin-left: 40px;
+}
+.title_white {
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.price {
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #445162;
+    text-align: center;
+    color: #445162;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 5%;
+}
+.service_package_list {
+    min-height: 125px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.service_package_item {
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.button-buy {
+    width: 260px;
+    height: 40px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #445161;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.button-buy:hover {
+    background-color: #ebebeb;
+}
+
+/*contacts*/
+.contacts {
+    min-height: 510px;
+    background-color: #445162;  
+}
+.grey_title {
+    color: #fff;
+}
+.message {
+    width: 500px;
+    float: left;
+    margin-left: 200px;
+}
+.message_name, .message_email {
+    width: 500px;
+    height: 40px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.message-text {
+    width: 500px;
+    height: 170px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.message_name:focus, .message_email:focus, .message-text:focus {
+    background-color: #ebebeb;
+}
+.message-button {
+    width: 140px;
+    height: 40px;
+    background-color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 5px;
+}
+.message-button:hover {
+    background-color: #ebebeb;
+}
+.our_contacts {
+    margin-left: 50px;
+    float: left;
+}
+.social_media_list {
+    margin-top: 30px;
+}
+.contacts_item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    height: 26px;
+    display: block;  
+}
+.contacts_item:hover {
+    opacity: .8;
+}
+.contacts_list_image {
+    float: left;
+    margin-right: 5px;
+}
+.contacts_list_text {
+    float: left;
+}
+.social_media_item {
+    width: 40px;
+    height: 40px;  
+}
+.social_media_item:hover {
+    opacity: .8;
+}
+
+/*footer*/
+.footer {
+    min-height: 26px;
+    text-align: center;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
