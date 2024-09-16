@@ -1,0 +1,75 @@
+@media (min-width: 992px) {
+    .pluses_product_list div[class^="col-"]:not(:nth-child(-n+2)) {
+        margin-top: 15px;}
+    .scrinshots [class^="col"]:nth-child(n+3) {
+        margin-top: 15px;}
+    .review_wrapper:nth-child(n+3) {
+        margin-top: 15px;}
+    .buy_list {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;}
+    .price_item:not(:last-child) {
+        margin-right: 15px;}
+    .contacts_wrapper {
+        display: flex;
+        justify-content: center;}
+}
+
+@media all and (min-width: 0) and (max-width: 991px) {
+    .video_text {
+        font-size: 25px;}
+    .video-button {
+        font-size: 12px;}
+    .pluses_product_list div[class^="col-"]:not(:first-child) {
+        margin-top: 15px;}
+    .scrinshots [class^="col"]:not(:first-child) {
+        margin-top: 15px;}
+    .review_wrapper:not(:first-child) {
+        margin-top: 15px;}
+    .reviews_title {
+        margin-bottom: 10px;}
+    .review_image {
+        display: block;
+        float: none;
+        margin: 10px auto 15px auto;}
+    .review_content {
+        margin-top: 10px;}
+    .review::before {
+        top: -10px;
+        left: calc(50% - 10px);}
+    .price_item:not(:last-child) {
+        margin-bottom: 30px;}
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+    .container {
+        padding: 0;}
+    .product_name, .about_product, .pluses_product, 
+    .scrinshots, .reviews, .buy_now, .contacts {
+        padding: 15px;}
+    .video_text {
+        font-size: 20px;}
+    .video-button {
+        margin-top: 15px;
+    }
+    .about_product_title {
+        margin-bottom: 15px;}
+    .contacts_list {
+        margin-top: 15px;}
+}
+
+@media (max-width: 479px) {
+    .product_name_title {
+        font-size: 46px;}
+    .pluses_product_list div[class^="col-"]:last-child .pluses_product_item {
+        background: none;
+        padding-bottom: 0;}
+    .pluses_product_item {
+        background-position: center bottom;
+        padding-bottom: 40px;
+        padding-left: 0;
+        text-align: left;}
+    .scrinshot_image {
+        float: none;}
+}
